@@ -15,6 +15,7 @@
 		1E5A4CFA29599327001362D6 /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A4CF929599327001362D6 /* SpaceXAPI.swift */; };
 		1E5A4CFC295999BD001362D6 /* LaunchesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A4CFB295999BD001362D6 /* LaunchesEndpoint.swift */; };
 		1E5A4CFE295999C9001362D6 /* CapsulesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A4CFD295999C9001362D6 /* CapsulesEndpoint.swift */; };
+		1E5A4D002959F917001362D6 /* MockedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A4CFF2959F917001362D6 /* MockedAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1E5A4CF929599327001362D6 /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
 		1E5A4CFB295999BD001362D6 /* LaunchesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesEndpoint.swift; sourceTree = "<group>"; };
 		1E5A4CFD295999C9001362D6 /* CapsulesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesEndpoint.swift; sourceTree = "<group>"; };
+		1E5A4CFF2959F917001362D6 /* MockedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1E5A4CF929599327001362D6 /* SpaceXAPI.swift */,
 				1E5A4CFB295999BD001362D6 /* LaunchesEndpoint.swift */,
 				1E5A4CFD295999C9001362D6 /* CapsulesEndpoint.swift */,
+				1E5A4CFF2959F917001362D6 /* MockedAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				1E5A4CEB29599245001362D6 /* ContentView.swift in Sources */,
 				1E5A4CFA29599327001362D6 /* SpaceXAPI.swift in Sources */,
+				1E5A4D002959F917001362D6 /* MockedAPI.swift in Sources */,
 				1E5A4CFC295999BD001362D6 /* LaunchesEndpoint.swift in Sources */,
 				1E5A4CF829599269001362D6 /* APIEndpoint.swift in Sources */,
 				1E5A4CFE295999C9001362D6 /* CapsulesEndpoint.swift in Sources */,

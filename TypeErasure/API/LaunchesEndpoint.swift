@@ -19,7 +19,6 @@ struct Launch: Decodable {
     let launchYear: String
 }
 
-
 struct LaunchesEndpoint: APIEndpoint, URLProvider {
     typealias Output = [Launch]
 
