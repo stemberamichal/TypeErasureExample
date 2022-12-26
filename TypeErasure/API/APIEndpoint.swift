@@ -24,3 +24,15 @@ extension APIEndpoint where Self: URLProvider, Output: Decodable {
         return try JSONDecoder().decode(Output.self, from: task.0)
     }
 }
+
+struct AnyEndpoint<Output>: APIEndpoint {
+    private let anyLoad: () async throws -> Output
+
+    init<T: APIEndpoint>(endpoint: T) where T.Output == Self.Output {
+        self.anyLoad = endpoint.load
+    }
+
+    func load() async throws -> Output {
+        return try await self.anyLoad()
+    }
+}

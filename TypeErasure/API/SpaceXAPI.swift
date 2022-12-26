@@ -7,19 +7,17 @@
 
 import Foundation
 
-
 protocol SpaceXAPI {
-    func launches() -> LaunchesEndpoint
-    func capsules() -> CapsulesEndpoint
+    func launches() -> AnyEndpoint<[Launch]>
+    func capsules() -> AnyEndpoint<[Capsule]>
 }
 
 class SimpleSpaceXAPI: SpaceXAPI {
-    func launches() -> LaunchesEndpoint {
-        LaunchesEndpoint()
+    func launches() -> AnyEndpoint<[Launch]> {
+        AnyEndpoint(endpoint: LaunchesEndpoint())
     }
 
-    func capsules() -> CapsulesEndpoint {
-        CapsulesEndpoint()
+    func capsules() -> AnyEndpoint<[Capsule]> {
+        AnyEndpoint(endpoint: CapsulesEndpoint())
     }
-
 }
