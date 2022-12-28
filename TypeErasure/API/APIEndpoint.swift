@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol APIEndpoint {
+protocol APIEndpoint<Output> {
     associatedtype Output
 
     func load() async throws -> Output
