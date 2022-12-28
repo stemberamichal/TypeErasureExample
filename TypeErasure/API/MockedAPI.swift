@@ -20,11 +20,11 @@ struct MockedEndpoint<Output>: APIEndpoint {
 }
 
 class MockSpaceXAPI: SpaceXAPI {
-    func launches() -> AnyEndpoint<[Launch]> {
-        AnyEndpoint(endpoint: MockedEndpoint(value: []))
+    func launches() -> any APIEndpoint {
+        MockedEndpoint(value: [])
     }
 
-    func capsules() -> AnyEndpoint<[Capsule]> {
-        AnyEndpoint(endpoint: MockedEndpoint(value: []))
+    func capsules() -> any APIEndpoint {
+        MockedEndpoint(value: [])
     }
 }

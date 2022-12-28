@@ -22,8 +22,8 @@ class ContentViewModel: ObservableObject {
             let launches = try await self.spaceXAPI.launches().load()
             let capsules = try await self.spaceXAPI.capsules().load()
             DispatchQueue.main.async {
-                self.launches = launches
-                self.capsules = capsules
+                self.launches = launches as? [Launch] ?? []
+                self.capsules = capsules as? [Capsule] ?? []
             }
         }
     }
